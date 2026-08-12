@@ -1,0 +1,20 @@
+rules_version = '2';
+service firebase.storage {
+  match /b/{bucket}/o {
+    function isAdmin() {
+      return request.auth != null && request.auth.token.admin == true;
+    }
+
+    // Allow public read of uploaded media
+    match /{allPaths=**} {
+      allow read: if true;
+      // Writes only by admins; restrict writes to known folders and file extensions
+      allow write: if isAdmin() && (
+        allPaths.startsWith('photos/') ||
+        allPaths.startsWith('projects/') ||
+        allPaths.startsWith('videos/') ||
+        allPaths.startsWith('songs/')
+      );
+    }
+  }
+}

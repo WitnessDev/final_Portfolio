@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+  --bg:#0b0b0b;
+  --muted:#9ca3af;
+}
+
+html,body,#root{height:100%;}
+body{font-family:Manrope, system-ui, sans-serif;background:var(--bg);color:#fff}
+
+/* Cormorant hero */
+.h-hero{font-family:"Cormorant Garamond", serif}
+
+/* utility for small mono labels */
+.label-mono{font-family:"Space Mono", monospace;font-size:.85rem;letter-spacing:.12em}
+
+/* Motion & reveals */
+@media (prefers-reduced-motion: no-preference){
+  .reveal { transform: translateY(6px); opacity: 0; transition: transform .6s cubic-bezier(.2,.9,.2,1), opacity .6s }
+  .reveal.in { transform: none; opacity: 1 }
+  .img-zoom:hover { transform: scale(1.03); transition: transform .5s }
+}
+
+/* Respect reduced motion */
+@media (prefers-reduced-motion: reduce){
+  .reveal, .img-zoom { transition: none !important }
+}
