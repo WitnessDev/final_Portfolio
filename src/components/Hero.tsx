@@ -16,7 +16,7 @@ export const Hero: React.FC<HeroProps> = ({ lang = 'en' }) => {
       <div
         className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat transition-transform duration-1000 transform scale-105 pointer-events-none"
         style={{
-          backgroundImage: `url(src/images/bg-image.jpg)`, // Ensure the path is correct
+          backgroundImage: `url(public/images/bg-image.jpg)`, // Ensure the path is correct
         }}
       />
 
