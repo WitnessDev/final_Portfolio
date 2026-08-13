@@ -1,0 +1,6 @@
+{
+  "name": "Honesty Visuals - Media Portfolio",
+  "description": "Minimalist, high-impact single-page media portfolio for Honesty Visuals (Video Direction, Cinematography, Drone Piloting, Graphic Design, Photography).",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

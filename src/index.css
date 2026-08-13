@@ -1,0 +1,56 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Montserrat:wght@300;400;500;600;700&family=Syne:wght@700;800&display=swap');
+
+@layer utilities {
+  .font-display {
+    font-family: 'Syne', sans-serif;
+  }
+  .font-body {
+    font-family: 'Montserrat', sans-serif;
+  }
+  .font-mono {
+    font-family: 'JetBrains Mono', monospace;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  max-width: 100vw;
+}
+
+body {
+  overflow-x: hidden;
+  width: 100%;
+  max-width: 100vw;
+  min-height: 100vh;
+  min-height: 100dvh;
+  background-color: #0B0B0C;
+  color: #E5E5E3;
+  font-family: 'Montserrat', sans-serif;
+
+  /* Dark Overlay + Background Image */
+  background-image: 
+    linear-gradient(rgba(11, 11, 12, 0.85), rgba(11, 11, 12, 0.85)),
+    url('images/bg-image.jpg');
+  
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* Custom Muted Editorial Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0B0B0C;
+}
+::-webkit-scrollbar-thumb {
+  background: #222225;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #CDB26B;
+}
