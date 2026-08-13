@@ -20,7 +20,7 @@ export const AboutSection: React.FC = () => {
         <div className="md:col-span-5 space-y-6 md:sticky md:top-28">
           <div className="w-full aspect-[3/4] bg-neutral-900 border border-white/10 rounded-sm overflow-hidden relative group shadow-2xl">
             <OptimizedImage
-              src="public/images/honesty2.jpeg"
+              src="/images/honesty2.jpeg"
               alt="Honesty Visuals Profile"
               widthParam={800}
               qualityParam={80}
